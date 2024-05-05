@@ -36,7 +36,7 @@ VALIDATE $? "Extracted (Unzipped) Backend Code in /app directory"
 npm install &>>$LOGFILE
 VALIDATE $? "Installing nodejs dependencies"
 
-cp /home/ec2-user/project-automation/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
+cp /home/ec2-user/proj-auto/backend.service /etc/systemd/system/backend.service &>>$LOGFILE
 VALIDATE $? "Creating backend.service"
 
 systemctl daemon-reload &>>$LOGFILE

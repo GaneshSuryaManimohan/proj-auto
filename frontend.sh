@@ -23,7 +23,7 @@ cd /usr/share/nginx/html
 unzip /tmp/frontend.zip &>>$LOGFILE
 VALIDATE $? "Extract (unzip) frontend code in /usr/share/nginx/html"
 
-cp /home/ec2-user/project-automation/expense.conf /etc/nginx/default.d/expense.conf &>>$LOGFILE
+cp /home/ec2-user/proj-auto/expense.conf /etc/nginx/default.d/expense.conf &>>$LOGFILE
 VALIDATE $? "Copying expense.conf to /etc/nginx/default.d/"
 
 systemctl restart nginx &>>$LOGFILE
